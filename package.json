@@ -1,0 +1,41 @@
+{
+  "name": "@benawad/expo-mixpanel-analytics",
+  "version": "0.1.7",
+  "description": "Mixpanel integration for use with React Native apps built on Expo.",
+  "main": "src/index.ts",
+  "types": "dist/src/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benawad/expo-mixpanel-analytics.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "expo",
+    "mixpanel",
+    "analytics"
+  ],
+  "author": "Ben Awad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benawad/expo-mixpanel-analytics/issues"
+  },
+  "dependencies": {
+    "buffer": "^5.2.1"
+  },
+  "peerDependencies": {
+    "expo-constants": "^5.0.1",
+    "react": "16.5.2",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz"
+  },
+  "devDependencies": {
+    "@types/expo": "^32.0.10",
+    "@types/react-native": "^0.57.43",
+    "rimraf": "^2.6.3",
+    "typescript": "^3.4.3"
+  }
+}
