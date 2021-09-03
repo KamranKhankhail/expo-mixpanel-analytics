@@ -3,7 +3,6 @@ import Constants from "expo-constants";
 import { Buffer } from "buffer";
 import { removePropertyFromObject } from '@benawad/expo-mixpanel-analytics/src/utils';
 
-
 const { width, height } = Dimensions.get("window");
 
 const MIXPANEL_API_URL = "https://api.mixpanel.com";

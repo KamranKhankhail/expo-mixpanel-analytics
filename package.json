@@ -2,7 +2,7 @@
   "name": "@benawad/expo-mixpanel-analytics",
   "version": "0.1.7",
   "description": "Mixpanel integration for use with React Native apps built on Expo.",
-  "main": "src/index.ts",
+  "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -22,7 +22,7 @@
   "author": "Ben Awad",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/benawad/expo-mixpanel-analytics/issues"
+    "url": "https://github.com/codekadiya/expo-mixpanel-analytics/issues"
   },
   "dependencies": {
     "buffer": "^5.2.1"
