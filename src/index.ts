@@ -173,15 +173,12 @@ export class ExpoMixpanelAnalytics {
     if (this.osVersion) {
       data.properties.os_version = this.osVersion;
     }
-
-    console.log('beforeFilter: ', data)
     let filteredData: object = data
     if (Array.isArray(this.mustSkipEventFields) && this.mustSkipEventFields.length) {
       for (let field of this.mustSkipEventFields) {
         filteredData = removePropertyFromObject(filteredData, field)
       }
     }
-    console.log('afterFilter: ', filteredData)
 
     const buffer = new Buffer(JSON.stringify(filteredData)).toString("base64");
 
@@ -189,14 +186,12 @@ export class ExpoMixpanelAnalytics {
   }
 
   _pushProfile(data) {
-    console.log('beforeFilter: ', data)
     let filteredData: object = data
     if (Array.isArray(this.mustSkipProfileFields) && this.mustSkipProfileFields.length) {
       for (let field of this.mustSkipProfileFields) {
         filteredData = removePropertyFromObject(filteredData, field)
       }
     }
-    console.log('afterFilter: ', filteredData)
 
     data = new Buffer(JSON.stringify(filteredData)).toString("base64");
     return fetch(`${MIXPANEL_API_URL}/engage/?data=${data}`);
